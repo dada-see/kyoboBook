@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영풍문고</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="h_top">
+                <h2 class="logo"><a href="">영풍문고</a></h2>
+                <div class="icons">
+                    <p class="login">
+                        <a href="">
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                        </a>
+                    </p>
+                    <p class="cart">
+                        <a href="">
+                            <span class="material-symbols-outlined">
+                                shopping_bag
+                            </span>
+                            <span class="cart_num">0</span>
+                        </a>
+                    </p>
+                    <p class="menu">
+                        <a href="">
+                            <span class="material-symbols-outlined">
+                                menu
+                            </span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="h_search">
+                <div class="s_box">
+                    <div>
+                        <select name="bk_sep" id="bk_sep">
+                            <option value="all_book" selected>통합검색</option>
+                            <option value="best_book">베스트도서</option>
+                            <option value="new_book">신간도서</option>
+                            <option value="k_book">국내도서</option>
+                            <option value="f_book">외국도서</option>
+                        </select>
+                    </div>
+                    <p><input type="text"></p>
+                    <span class="material-symbols-outlined search_icon">
+                        search
+                    </span>
+                </div>
+                <p class="detail_search"><a href="">상세검색</a></p>
+            </div>
+            <div class="h_gnb">
+                <div class="gnb_top">
+                    <ul>
+                        <li><a href="">사전</a></li>
+                        <li><a href="" class="select">문학</a></li>
+                        <li><a href="">학습</a></li>
+                        <li><a href="">아동</a></li>
+                        <li><a href="">취미/실용</a></li>
+                        <li><a href="">예체능</a></li>
+                        <li><a href="">종교</a></li>
+                        <li><a href="">잡지</a></li>
+                        <li><a href="">정치/법률</a></li>
+                        <li><a href="">경제/경영</a></li>
+                    </ul>
+                </div>
+                <div class="gnb_row">
+                    <ul>
+                        <li><a href="">종교</a></li>
+                        <li><a href="">인문</a></li>
+                        <li><a href="">외국어</a></li>
+                        <li><a href="">정부간행물</a></li>
+                        <li><a href="">컴퓨터</a></li>
+                        <li><a href="">공학</a></li>
+                        <li><a href="">자연</a></li>
+                        <li><a href="">의학</a></li>
+                        <li><a href="">수험서</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main id="content">
+            <section class="main1">
+                <div class="m1_in">
+                    <div class="m1_title">
+                        <span class="material-symbols-outlined">
+                            trending_up
+                        </span>
+                        <h3>실시간 인기 책</h3>
+                    </div>
+                    <div class="m1_list">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <p class="photo"><img src="img/pop01.jpg" alt=""></p>
+                                    <div class="m1_txt">
+                                        <p class="m1_name">꽃을 보듯 너를 본다</p>
+                                        <p class="m1_writer">나태주 저</p>
+                                        <p class="m1_publish">지혜</p>
+                                        <p class="m1_price"><span>10%</span> 9,900원</p>
+                                        <p class="m1_point">550원 적립</p>
+                                    </div>
+                                </a>
+                                <div class="m1_btn">
+                                    <p class="m1_look"><a href="">자세히보기</a></p>
+                                    <p class="m1_cart"><a href="">장바구니</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="photo"><img src="img/pop02.jpg" alt=""></p>
+                                    <div class="m1_txt">
+                                        <p class="m1_name">서랍에 저녁을 넣어 두었다&lpar;한강...</p>
+                                        <p class="m1_writer">한강 저</p>
+                                        <p class="m1_publish">문학과지성사</p>
+                                        <p class="m1_price"><span>10%</span> 10,800원</p>
+                                        <p class="m1_point">600원 적립</p>
+                                    </div>
+                                </a>
+                                <div class="m1_btn">
+                                    <p class="m1_look"><a href="">자세히보기</a></p>
+                                    <p class="m1_cart"><a href="">장바구니</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="m1_03">
+                                    <p class="photo"><img src="img/pop03.jpg" alt=""></p>
+                                    <div class="m1_txt">
+                                        <p class="m1_name">[tvn 도깨비] 어쩌면 별들이 너...</p>
+                                        <p class="m1_writer">김용택 저</p>
+                                        <p class="m1_publish">예담</p>
+                                        <p class="m1_price"><span>10%</span> 11,520원</p>
+                                        <p class="m1_point">640원 적립</p>
+                                    </div>
+                                </a>
+                                <div class="m1_btn">
+                                    <p class="m1_look"><a href="">자세히보기</a></p>
+                                    <p class="m1_cart"><a href="">장바구니</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="photo"><img src="img/pop04.jpg" alt=""></p>
+                                    <div class="m1_txt">
+                                        <p class="m1_name">그리하여 흘려 쓴 것들&lpar;문학과...</p>
+                                        <p class="m1_writer">이제니 저</p>
+                                        <p class="m1_publish">문학과지성사</p>
+                                        <p class="m1_price"><span>10%</span> 10,800원</p>
+                                        <p class="m1_point">600원 적립</p>
+                                    </div>
+                                </a>
+                                <div class="m1_btn">
+                                    <p class="m1_look"><a href="">자세히보기</a></p>
+                                    <p class="m1_cart"><a href="">장바구니</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="">
+                            <p class="m_txt">more</p>
+                            <p class="material-symbols-outlined">
+                                keyboard_double_arrow_right
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="main2">
+                <div class="m2_in">
+                    <div class="m2_top">
+                        <h3>
+                            <span class="m2_which">'시' </span>
+                            검색결과
+                            <span class="m2_num">(총 32,773건)</span>
+                        </h3>
+                        <p class="m2_cartall"><a href="">장바구니 담기</a></p>
+                    </div>
+                    <div class="m2_select">
+                        <ul>
+                            <li><a href="">정확도</a></li>
+                            <li><a href="">판매량</a></li>
+                            <li><a href="">출간일</a></li>
+                            <li><a href="">상품명</a></li>
+                            <li><a href="">낮은가격</a></li>
+                            <li><a href="">높은가격</a></li>
+                            <li><a href="">할인율</a></li>
+                            <li><a href="">리뷰수</a></li>
+                        </ul>
+                        <select name="show_num" id="show_num">
+                            <option value="ten" selected>10개</option>
+                            <option value="twen">20개</option>
+                            <option value="thir">30개</option>
+                            <option value="four">40개</option>
+                        </select>
+                    </div>
+                    <div class="m2_list">
+                        <ul>
+                            <li>
+                                <input type="checkbox" class="checkbox">
+                                <p class="photo"><img src="img/book01.jpg" alt=""></p>
+                                <div class="m2_txt">
+                                    <div class="info">
+                                        <p class="serise">시리즈</p>
+                                        <p class="tax">소득공제</p>
+                                    </div>
+                                    <h5>바닷가 우체국</h5>
+                                    <div class="m2_hash">
+                                        <p><span>안도현</span></p>
+                                        <p><span>문학동네</span></p>
+                                        <p><span>1999.01.25</span></p>
+                                        <p><span>93p</span></p>
+                                    </div>
+                                    <p class="m2_content">연을 날리는 일과 시를 쓰는 일과 그리고 살아가는 일이 따로 있지 않으므로 매사에 지극정성을 다하는 도리밖에 없겠다. 다만 연을 날리다가 보면 연줄을 뚝, 끊어 보이지 않는 곳으...</p>
+                                    <p class="m2_deliver">11월 20일 출고 가능</p>
+                                    <div class="m2_money">
+                                        <p>
+                                            <span class="price_ori">9,000원</span>
+                                            <span class="price_dis">8,100</span>
+                                            원
+                                        </p>
+                                        <p class="dis_percent">10% 할인</p>
+                                        <span class="material-symbols-outlined save">
+                                            savings
+                                        </span>
+                                        <span class="m2_point">450원 적립</span>
+                                    </div>
+                                </div>
+                                <div class="m2_btn">    
+                                    <p class="my_library"><a href="">내 서재 담기</a></p>
+                                    <p class="purchase_now"><a href="">바로구매</a></p>
+                                    <p class="m2_cart"><a href="">장바구니</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checkbox">
+                                <p class="photo"><img src="img/book02.jpg" alt=""></p>
+                                <div class="m2_txt">
+                                    <div class="info">
+                                        <p class="serise">시리즈</p>
+                                        <p class="tax">소득공제</p>
+                                    </div>
+                                    <h5>그리운 여우(창비시선 163)</h5>
+                                    <div class="m2_hash">
+                                        <p><span>안도현</span></p>
+                                        <p><span>창비</span></p>
+                                        <p><span>1997.07.15</span></p>
+                                        <p><span>115p</span></p>
+                                    </div>
+                                    <p class="m2_content">보잘것 없는 사물에 시적인 생기를 불어넣어 작품을 신선한 생명체로 우리 곁에다가오게 하는 안도현 시인의 새 시집. 그의 시는 유구한 우리 시의 전통적 서정성에 뿌리를 대고 있으며...</p>
+                                    <p class="m2_deliver">11월 20일 출고 가능</p>
+                                    <div class="m2_money">
+                                        <p>
+                                            <span class="price_ori">9,000원</span>
+                                            <span class="price_dis">8,100</span>
+                                            원
+                                        </p>
+                                        <p class="dis_percent">10% 할인</p>
+                                        <span class="material-symbols-outlined save">
+                                            savings
+                                        </span>
+                                        <span class="m2_point">450원 적립</span>
+                                    </div>
+                                </div>
+                                <div class="m2_btn">
+                                    <p class="my_library"><a href="">내 서재 담기</a></p>
+                                    <p class="purchase_now"><a href="">바로구매</a></p>
+                                    <p class="m2_cart"><a href="">장바구니</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checkbox">
+                                <p class="photo"><img src="img/book03.jpg" alt=""></p>
+                                <div class="m2_txt">
+                                    <div class="info">
+                                        <p class="tax">소득공제</p>
+                                    </div>
+                                    <h5>게 눈 속의 연꽃</h5>
+                                    <div class="m2_hash">
+                                        <p><span>황지우</span></p>
+                                        <p><span>문학과지성사</span></p>
+                                        <p><span>1991.04.01</span></p>
+                                        <p><span>146p</span></p>
+                                    </div>
+                                    <p class="m2_content">시인의 네번째 시집. 시인은 현실의 방법적 재현이라는 그전 시의 일관성 속에서조심스러운 변모를 탐색하는데, 그 변모는 현실과 초월 사이의 갈등을 끌어안으면서, 그 갈등을 뛰어넘어...</p>
+                                    <p class="m2_deliver">11월 20일 출고 가능</p>
+                                    <div class="m2_money">
+                                        <p>
+                                            <span class="price_ori">12,000원</span>
+                                            <span class="price_dis">10,800</span>
+                                            원
+                                        </p>
+                                        <p class="dis_percent">10% 할인</p>
+                                        <span class="material-symbols-outlined save">
+                                            savings
+                                        </span>
+                                        <span class="m2_point">600원 적립</span>
+                                    </div>
+                                </div>
+                                <div class="m2_btn">
+                                    <p class="my_library"><a href="">내 서재 담기</a></p>
+                                    <p class="purchase_now"><a href="">바로구매</a></p>
+                                    <p class="m2_cart"><a href="">장바구니</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checkbox">
+                                <p class="photo"><img src="img/book04.jpg" alt=""></p>
+                                <div class="m2_txt">
+                                    <div class="info">
+                                        <p class="serise">시리즈</p>
+                                        <p class="best_seller">베스트셀러</p>
+                                        <p class="tax">소득공제</p>
+                                    </div>
+                                    <h5>입 속의 검은 잎(문학과지성 시인선 80)</h5>
+                                    <div class="m2_hash">
+                                        <p><span>기형도</span></p>
+                                        <p><span>문학과지성사</span></p>
+                                        <p><span>1991.02.01</span></p>
+                                        <p><span>145p</span></p>
+                                    </div>
+                                    <p class="m2_content">처음이자 마지막이 된 이 시집에서 기형도 시인은 일상 속에 내재하는 폭압과 공포의 심리 구조를 추억의 형식을 통해 독특하게 표현하고 있다. 그로테스크한 현실주의로 명명될 그의 시...</p>
+                                    <p class="m2_deliver">11월 20일 출고 가능</p>
+                                    <div class="m2_money">
+                                        <p>
+                                            <span class="price_ori">12,000원</span>
+                                            <span class="price_dis">10,800</span>
+                                            원
+                                        </p>
+                                        <p class="dis_percent">10% 할인</p>
+                                        <span class="material-symbols-outlined save">
+                                            savings
+                                        </span>
+                                        <span class="m2_point">600원 적립</span>
+                                    </div>
+                                </div>
+                                <div class="m2_btn">
+                                    <p class="my_library"><a href="">내 서재 담기</a></p>
+                                    <p class="purchase_now"><a href="">바로구매</a></p>
+                                    <p class="m2_cart"><a href="">장바구니</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checkbox">
+                                <p class="photo"><img src="img/book05.jpg" alt=""></p>
+                                <div class="m2_txt">
+                                    <div class="info">
+                                        <p class="tax">소득공제</p>
+                                    </div>
+                                    <h5>떠돌다가 머물다가(열린시학 시인선 18)</h5>
+                                    <div class="m2_hash">
+                                        <p><span>정을식</span></p>
+                                        <p><span>고요아침</span></p>
+                                        <p><span>2005.05.09</span></p>
+                                        <p><span>152p</span></p>
+                                    </div>
+                                    <p class="m2_content">정을식의 시가 고통스러운 이유는 먼저, 망각에 저항하고 있기 때문이다. 시인은 지난 시간과 사건에 대해 망각하지 않고 기억하며 그것을 노래한다. 그렇다고 섣불리 희미한 옛 사랑의...</p>
+                                    <p class="m2_deliver">11월 20일 출고 가능</p>
+                                    <div class="m2_money">
+                                        <p>
+                                            <span class="price_ori">6,000원</span>
+                                            <span class="price_dis">5,400</span>
+                                            원
+                                        </p>
+                                        <p class="dis_percent">10% 할인</p>
+                                        <span class="material-symbols-outlined save">
+                                            savings
+                                        </span>
+                                        <span class="m2_point">300원 적립</span>
+                                    </div>
+                                </div>
+                                <div class="m2_btn">
+                                    <p class="my_library"><a href="">내 서재 담기</a></p>
+                                    <p class="purchase_now"><a href="">바로구매</a></p>
+                                    <p class="m2_cart"><a href="">장바구니</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checkbox">
+                                <p class="photo"><img src="img/book06.jpg" alt=""></p>
+                                <div class="m2_txt">
+                                    <div class="info">
+                                        <p class="best_seller">베스트셀러</p>
+                                        <p class="tax">소득공제</p>
+                                    </div>
+                                    <h5>비틀거리는 그림자(엠아이지 시집총서 19)</h5>
+                                    <div class="m2_hash">
+                                        <p><span>김형출</span></p>
+                                        <p><span>엠아이지</span></p>
+                                        <p><span>2005.09.09</span></p>
+                                        <p><span>158p</span></p>
+                                    </div>
+                                    <p class="m2_content">김형출의 시에는 순수서정과 분열된 감수성의 암호같은 추상의 세계가 공존하고 있다. 또한, 온건한 사유와 자동기술의 혼미한 기색이 엿보이는 질서이탈의 발상이 공생한다. 이는 김형출...</p>
+                                    <p class="m2_deliver">나우드림 가능</p>
+                                    <div class="m2_money">
+                                        <p>
+                                            <span class="price_ori">8,000원</span>
+                                            <span class="price_dis">7,200</span>
+                                            원
+                                        </p>
+                                        <p class="dis_percent">10% 할인</p>
+                                        <span class="material-symbols-outlined save">
+                                            savings
+                                        </span>
+                                        <span class="m2_point">
+                                            400원 적립</span>
+                                    </div>
+                                </div>
+                                <div class="m2_btn">
+                                    <p class="my_library"><a href="">내 서재 담기</a></p>
+                                    <p class="purchase_now"><a href="">바로구매</a></p>
+                                    <p class="m2_cart"><a href="">장바구니</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checkbox">
+                                <p class="photo"><img src="img/book07.jpg" alt=""></p>
+                                <div class="m2_txt">
+                                    <div class="info">
+                                        <p class="best_seller">베스트셀러</p>
+                                        <p class="tax">소득공제</p>
+                                    </div>
+                                    <h5>포구의 아침</h5>
+                                    <div class="m2_hash">
+                                        <p><span>박상건</span></p>
+                                        <p><span>책만드는집</span></p>
+                                        <p><span>2003.05.15</span></p>
+                                        <p><span>126p</span></p>
+                                    </div>
+                                    <p class="m2_deliver">11월 20일 출고 가능</p>
+                                    <div class="m2_money">
+                                        <p>
+                                            <span class="price_ori">6,000원</span>
+                                            <span class="price_dis">5,400</span>
+                                            원
+                                        </p>
+                                        <p class="dis_percent">10% 할인</p>
+                                        <span class="material-symbols-outlined save">
+                                            savings
+                                        </span>
+                                        <span class="m2_point">300원 적립</span>
+                                    </div>
+                                </div>
+                                <div class="m2_btn">
+                                    <p class="my_library"><a href="">내 서재 담기</a></p>
+                                    <p class="purchase_now"><a href="">바로구매</a></p>
+                                    <p class="m2_cart"><a href="">장바구니</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checkbox">
+                                <p class="photo"><img src="img/book08.jpg" alt=""></p>
+                                <div class="m2_txt">
+                                    <div class="info">
+                                        <p class="tax">소득공제</p>
+                                    </div>
+                                    <h5>생의 인사말(황금알시인선123)</h5>
+                                    <div class="m2_hash">
+                                        <p><span>한성례,다지마야스에외</span></p>
+                                        <p><span>황금알</span></p>
+                                        <p><span>2015.12.31</span></p>
+                                        <p><span>590p</span></p>
+                                    </div>
+                                    <p class="m2_deliver">11월 20일 출고 가능</p>
+                                    <div class="m2_money">
+                                        <p>
+                                            <span class="price_ori">25,000원</span>
+                                            <span class="price_dis">23,750</span>
+                                            원
+                                        </p>
+                                        <p class="dis_percent">5% 할인</p>
+                                        <span class="material-symbols-outlined save">
+                                            savings
+                                        </span>
+                                        <span class="m2_point">1000원 적립</span>
+                                    </div>
+                                </div>
+                                <div class="m2_btn">
+                                    <p class="my_library"><a href="">내 서재 담기</a></p>
+                                    <p class="purchase_now"><a href="">바로구매</a></p>
+                                    <p class="m2_cart"><a href="">장바구니</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checkbox">
+                                <p class="photo"><img src="img/book09.jpg" alt=""></p>
+                                <div class="m2_txt">
+                                    <div class="info">
+                                        <p class="tax">소득공제</p>
+                                    </div>
+                                    <h5>동트기 전 한 시간(포엠포엠 시인선 7)</h5>
+                                    <div class="m2_hash">
+                                        <p><span>고이케마사요</span></p>
+                                        <p><span>포엠포엠</span></p>
+                                        <p><span>2014.12.08</span></p>
+                                        <p><span>177p</span></p>
+                                    </div>
+                                    <p class="m2_deliver">11월 20일 출고 가능</p>
+                                    <div class="m2_money">
+                                        <p>
+                                            <span class="price_ori">10,000원</span>
+                                            <span class="price_dis">9,000</span>
+                                            원
+                                        </p>
+                                        <p class="dis_percent">10% 할인</p>
+                                        <span class="material-symbols-outlined save">
+                                            savings
+                                        </span>
+                                        <span class="m2_point">500원 적립</span>
+                                    </div>
+                                </div>
+                                <div class="m2_btn">
+                                    <p class="my_library"><a href="">내 서재 담기</a></p>
+                                    <p class="purchase_now"><a href="">바로구매</a></p>
+                                    <p class="m2_cart"><a href="">장바구니</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checkbox">
+                                <p class="photo"><img src="img/book10.jpg" alt=""></p>
+                                <div class="m2_txt">
+                                    <div class="info">
+                                        <p class="tax">소득공제</p>
+                                    </div>
+                                    <h5>경계에서-청춘의 아름다운 방황과 불안에 대하여</h5>
+                                    <div class="m2_hash">
+                                        <p><span>이우</span></p>
+                                        <p><span>몽상가들</span></p>
+                                        <p><span>2020.08.01</span></p>
+                                        <p><span>136p</span></p>
+                                    </div>
+                                    <p class="m2_content">몽상가들의 첫 번째 시인선. 장편소설 『레지스탕스』와 에세이집 『자기만의 모험』의 저자 이우의 세 번째 출간작이자 첫 번째 시집 이다. 2018년 첫 출간 이래로 매년 꾸준하...</p>
+                                    <p class="m2_deliver">나우드림 가능</p>
+                                    <div class="m2_money">
+                                        <p>
+                                            <span class="price_ori">10,000원</span>
+                                            <span class="price_dis">9,000</span>
+                                            원
+                                        </p>
+                                        <p class="dis_percent">10% 할인</p>
+                                        <span class="material-symbols-outlined save">
+                                            savings
+                                        </span>
+                                        <span class="m2_point">500원 적립</span>
+                                    </div>
+                                </div>
+                                <div class="m2_btn">
+                                    <p class="my_library"><a href="">내 서재 담기</a></p>
+                                    <p class="purchase_now"><a href="">바로구매</a></p>
+                                    <p class="m2_cart"><a href="">장바구니</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="m2_pager">
+                        <div class="m2_pager_in">
+                            <ul>
+                                <li class="select"><a href="">1</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">4</a></li>
+                                <li><a href="">5</a></li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="f_in">
+                <div class="f_btn">
+                    <p class="f_login"><a href="">로그인</a></p>
+                    <p class="f_recent"><a href="">최근 본 상품</a></p>
+                    <p class="f_order"><a href="">주문/배송</a></p>
+                </div>
+                <div class="switch">
+                    <div class="f_hash">
+                        <p class="f_scm">출판사용 통합관리시스템 SCM</p>
+                        <p class="f_call">고객센터 1544-9020</p>
+                    </div>
+                    <div class="f_main">
+                        <h2 class="f_logo"><a href="">영풍문고</a></h2>
+                        <div class="f_txt">
+                            (주)영풍문고<br>
+                            서울특별시 종로구 청계천로 41 (우)03188<br>
+                            대표: 김경환 | 개인정보관리 책임자 : 조순제 customer@ypbooks.co.kr<br>
+                            사업자등록번호 : 773-86-01800 | 통신판매업 신고번호 : 2023-서울종로-0130<br>
+                            COPYRIGHT © YOUNGPOONG BOOKSTORE INC. ALL RIGHTS RESERVED.
+                        </div>
+                    </div>
+                </div>
+                <div class="f_gnb">
+                    <ul>
+                        <li><a href="">회사소개</a></li>
+                        <li class="hide"><a href="">광고안내</a></li>
+                        <li><a href="">입점문의</a></li>
+                        <li class="hide"><a href="">청약철회</a></li>
+                        <li class="hide"><a href="">청소년보호정책</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li class="stroke"><a href="">개인정보처리방침</a></li>
+                        <li class="hide"><a href="">영상정보관리방침</a></li>
+                        <li class="hide"><a href="">이메일 무단 수집거부</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
